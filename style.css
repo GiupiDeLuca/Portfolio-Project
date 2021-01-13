@@ -1,0 +1,123 @@
+
+
+/*
+setting up the background color and border.
+*/
+body {
+  background-color: blanchedalmond;
+  padding: 50px;
+  border: 5px solid rgb(89, 67, 92);
+  margin: 200px;
+}
+/*
+picture editing and centering.
+*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 30px;
+  margin-top: -20px;
+  border-radius: 10%
+}
+/*
+resizing the picture.
+*/
+.resize {
+  width: 300px;
+  height: auto;
+}
+/*
+setting up the main font, color and properties for all the elements below.
+*/
+header, h1, h2, h3, footer, p {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(89, 67, 92);
+  text-align: center;
+  margin-top: 50px;
+}
+/*
+sizing, transforming the main header. 
+*/
+h1 {
+  font-size: 60px; 
+  text-transform: uppercase;
+  margin-bottom: 0mm;
+}
+/*
+sizing, transforming the second headers through the website. 
+*/
+h2 {
+  font-size: 35px;
+  margin-top: 0mm;
+  margin-bottom: 0px;
+}
+h3 {
+  font-size: 35px;
+  margin-top: 0mm;
+  margin-bottom: 0px;
+}
+/*
+font and weight of paragraphs and anchors. 
+*/
+p, a, ul, ol {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600px;
+  color: rgb(89, 67, 92);
+}
+p, ul, ol {
+  font-size: 20px;
+}
+/*
+pseudo classes link styling. 
+*/
+a:link { color: rgb(89, 67, 92) ; }
+a:visited { color: rgb(78, 15, 78); }
+a:hover { color: rgb(29, 112, 151); }
+a:active { color: firebrick; }
+/*
+modifying anchor style and getting rid of the undeline. 
+*/
+a {
+  font-style: bold;
+  text-decoration: none;
+}
+/*
+creating a wrapper to be used for part of the header and the footer. 
+*/
+.wrapper {
+  background-color:  rgb(89, 67, 92);
+  color: blanchedalmond;
+  margin: 7px;
+}
+/*
+aligning and positioning the lists.
+*/
+ul, ol {
+  text-align: center;
+  list-style-position: inside;
+  padding-top: 5px;
+}
+/*
+making sure that both paragraphs in nav are on the same line.
+*/
+nav > p {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 5mm;
+}
+/*
+modifying the horizontal ruler.
+*/
+hr {
+  background-color: rgb(89, 67, 92);
+  height: 2px;
+}
+/*
+smooth scrolling through the whole file.
+*/
+html {
+  scroll-behavior: smooth;
+}

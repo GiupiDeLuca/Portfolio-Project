@@ -1,0 +1,76 @@
+
+<!--creating a doctype html head meta title and normalize link as well as css link -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio Project</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+<!--giving h1 and h2 semantic importance, using the wrapper for h2 and creating anchors in nav container for "about" and "contact" (both with semantic relevance as well) -->
+    <header>
+      <h1><strong>Giuseppe De Luca</strong></h1>
+      <h2 class="wrapper"><strong>Web Developer</strong></h2>
+      <nav>
+        <p><a href="#about"><em><b>About</b></em></a></p>
+        <p><a href="#contact"><em><b>Contact</b></em></a></p>
+      </nav>
+    </header>
+
+    <main> <!-- image gets resized with class -->
+      <img class="resize" src="images/gavatar.jpeg" alt="Giuseppe Smiling"/>
+
+      <section> <!-- new section container containing h2 and an artcicle container -->
+        <h3>Hi! I'm Giuseppe De Luca</h3>
+        <article>
+          <p> I'm a Web Developer living in Brooklyn, NY</p>
+          <ul> <!--using an unordered list -->
+            <li> I was born in Sicily, in the south of Italy.</li>
+            <li> I've been in love with NY for about 12 years.</li>
+          </ul>
+          <p> Scroll down to know more <a href="#about"><em><b>about me</b></em></a> and feel to <a href="#contact"><em><b>contact me</b></em>.</a></p>
+        </article>
+      </section> <!--closing article and section -->
+
+      <hr> <!--using hr to separate different sections -->
+
+      <section id="about"> <!-- this is where the "about" anchor above lands. -->
+        <h3>About Giuseppe</h3> 
+        <article> <!--article with 3 paragraphs -->
+          <p> I've traveled the world and worn many different hats, learning about web development has been a very rewarding and fun part of my life.</p>
+          <p> I love working with others on collabortive projects and bring a fun and caring energy wherever I go.</p>
+          <p> I have worked in theatre, independent films and I'm also passionate about eastern philosophies and yoga.</p>
+        </article>
+      </section>
+
+      <hr> <!-- using hr again to separate sections-->
+
+      <section id="contact"> <!-- this is where the "contact" anchor above lands. -->
+        <h3> Contact Giuseppe</h3>
+        <article>
+          <p> Feel free to contact me, I'm always happy to connect with new people and share new experiences</p>
+          <ol> <!--ordered list with anchors that open new tabs -->
+            <li><a href="https://github.com/GiupiDeLuca" target="_blank"><strong>GitHub</strong></a></li>
+            <li><a href="https://www.linkedin.com/in/giuseppe-de-luca-b52264204/" target="_blank"><strong>LinkedIn</strong></a></li>
+            <li><a href="mailto:giupi.deluca@hotmail.com" target="_blank"><strong>email</strong></a></li>
+          </ol>
+        </article>
+      </section>
+    </main>
+
+    <footer class="wrapper"> <!-- using the wrapper for the footer -->
+      <h4>©️GiupiDeLuca</h4>
+    </footer>
+
+        
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html> <!-- The End ;) -->
